@@ -10,13 +10,15 @@ const {
   filterByCategory,
 } = require('./utils/sortByPrice');
 let cors = require('cors');
-// const hotels = require('./hotel');
 
 const app = express();
 app.use(cors());
 const port = 3010;
 
-app.use(express.static('static'));
+// app.use(express. Static('static'));
+
+
+express. Static
 
 
 app.get('/',(req,res)=>{
