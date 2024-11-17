@@ -18,6 +18,10 @@ const port = 3010;
 
 app.use(express.static('static'));
 
+
+app.get('/',(req,res)=>{
+  res.status(200).send('welcome to tripWithUs')
+})
 app.get('/hotels', (req, res) => {
   res.json({ hotels: hotels });
 });
